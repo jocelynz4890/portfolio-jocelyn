@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Jocelyn's Portfolio"
   text: "6.1040 Fall 2024"
-  tagline: "idk"
+  tagline: "Software Design"
   actions:
     - theme: brand
       text: Template Repository
@@ -16,10 +16,12 @@ hero:
 
 features:
   - title: Blogs
-    details: Some cool blogs you'll write this semester!
+    details: Blogs I've written this semester
     link: /blogs
   - title: Assignments
-    details: All of your assignments will be posted on your portfolio.
+    details: Assignments submitted for 6.1040
+    link: /assignments
   - title: About Me
-    details: You'll implement a small bio about yourself on here!
+    details: A short bio and some social media links
+    link: /about
 ---
