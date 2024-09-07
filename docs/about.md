@@ -8,4 +8,4 @@ Hi! I'm **Jocelyn**, a sophomore at MIT double majoring in **6-3** and **18**. I
 
 I'm looking forward to creating a project this semester in 6.1040 where I can put my creativity to good use to solve real-world problems!
 
-![](/Users/jocelyn/repos/portfolio-jocelyn/docs/public/me.jpg){:width='200'}
+![](/me.jpg){:width='200'}

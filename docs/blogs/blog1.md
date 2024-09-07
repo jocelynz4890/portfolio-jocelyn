@@ -10,7 +10,7 @@ Write some cool stuff here!
 **bold**
 *italic*
 
-> block squote
+> block quote
 
 1. list
 2. list 2
