@@ -8,8 +8,6 @@ layout: doc
 
 After reflecting on my report from the needfinding assignment and combining ideas from a few of the design opportunities I found, I've decided that the focus of my application will be to create an experience that allows the user to feel that it was productive. It will not feel "time wasting", in the words of my intended audience, who are people that don't have an interest in "putting stuff out there" on social media "to get praised", and are interested in self-improvement. This application will take the 'doom' out of 'doomscrolling' by de-emphasizing or separating different types of content. It will also emphasize accomplishments/goals in order to remove some of the "artificiality" that modern social media promote through features such as likes and follower count. Existing apps encourage users to use them daily and often, yet do not promote productivity by increasing the visibility of productivity-tracking features, which is what will make my application will solve.
 
-Likes and follower count for content creators will remain visible for quality control
-
 I picked a fun name for the app: **AchieveMint**. 
 ::: details Just for fun
 I was so into my idea that the front-end addict in me went ahead and picked out a color palette (from [Color Hunt](https://colorhunt.co/)) for both dark and light mode that fit the theme and name of the application. 

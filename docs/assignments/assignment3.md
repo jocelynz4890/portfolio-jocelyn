@@ -6,9 +6,7 @@ layout: doc
 
 ## 📣 Pitch
 
-Pitch. Write a succinct (100 to 300 word) product pitch for your app, that gives it a name, describes its intended audience, the value that it brings, and some of its key functionality. Feel free to build on what you wrote in the previous assignment, and to draw on the insights you gleaned from your interviews and introspection. Describe the functionality in terms of the central concepts. We recommend drafting this pitch and then returning to adjust and revise it after you have completed your conceptual design.
-
-Have you ever wasted time doomscrolling on social media and hated yourself for it afterwards? Do you wish you could harness your social. Achievemint is social media app that will leave you guilt-free and sets you up for self-improvement. It's all about balance. Achievemint promotes this in a gamified way.
+Have you ever wasted time doomscrolling or comparing yourself to others on social media and hated yourself for it afterwards? Do you wish you could incorporate more productive habits into your life? Achievemint is social media app that will leave you guilt-free by setting you up for self-improvement. It's an app for those who could use more balance in their lives, which the app provides by giving users the ability to save posts in collections and sub-collections that are classified under the six categories: **Lifestyle**, **Health & Fitness**, **Entertainment**, **Food & Cooking**, **Fashion & Beauty**, and **Education & DIY (Do It Yourself)**. The app displays a summary of the user's activity in each of the categories. The app also aids users in achieving their goals by allowing for collections to have deadlines and give reminders at certain time intervals. As an app that is designed to be used daily in a healthy manner, it increases the visibility of the goals a user is working on through a tracker feature that supports habit tracking and mood tracking with monthly and yearly heatmaps. Achievemint incorporates gamification through a leveling system to motivate users to keep up with their goals and maintain healthy habits.
 
 ## ⚙️ Functional Design
 
