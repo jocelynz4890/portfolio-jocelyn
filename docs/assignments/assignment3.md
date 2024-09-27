@@ -284,7 +284,7 @@ Achievemint is for those who could use more balance in their lives: the app allo
 **Purpose:** users can reflect quantitatively on the amount of progress they've made from various sources of experience
 <br>
 
-**Operational Principle:** The level of a user is calculated based on the number of experience points acquired by the user, which is calculated from a fixed set of experience sources. The amount of experience points required to reach the next level doubles each time and starts at 5 exp required to go from level 1 to 2.
+**Operational Principle:** The level of a user is calculated based on the number of experience points acquired by the user, which is calculated from a fixed set of experience sources. The amount of experience points required to reach the next level increases by 5 each time and starts at 5 exp required to go from level 1 to 2.
 
 **State:**
 ```ts
@@ -308,7 +308,7 @@ Achievemint is for those who could use more balance in their lives: the app allo
         users_exp[u] = calculateUserTotalExp(u, s: ExperienceSources)
 
     calculateLevel(i: int, out: int)
-        return floor(log_2_(i/5))
+        return floor(i%5)
 
     updateLevel(u: User)
         updateUserExp(u)
