@@ -447,6 +447,7 @@ app Achievemint
         if Authenticating.getUserRole(user.username) === RegularUser
             Collection-ing.addToCollection(User, name, p)
             Summarizing.updateSummaries(Collection-ing.getUserDefaultCollectionSizes(user))
+            Leveling.updateLevel(user)
 
     sync updateCollectionDeadline(user: User, name: String, d: Date)
         if Authenticating.getUserRole(user.username) === RegularUser
