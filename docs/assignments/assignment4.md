@@ -4,26 +4,91 @@ layout: doc
 ---
 # Backend Design & Implementation
 
+[Deployment](https://achievemint-app.vercel.app/)
+<br>
+[Repository](https://github.com/jocelynz4890/achievemint)
+
 ## ✅ Abstract Data Models
 
-### 
+### Authenticating
+```ts
+    registered: set User
+    username, password: registered -> one String
+    roles: set User
+    username, Role: registered -> one User
+```
 
-###
+### Posting[Author]
+```ts
+    post: set (Content, quality_rating: int, category: Category)
+    user_posts: User -> set Posts
+    quality_ratings: set Ratings
+```
 
-###
+### Following[User]
+```ts
+    user_followers: User -> set followers
+    followers: set User
+    follower: followers -> one User
 
-###
+    user_followings: User -> set followers
+    followings: set User
+    following: followings -> one User
 
-###
+    requests: set (user, user)
+```
 
-###
+### Tracker-ing
+```ts
+    user_trackers: User -> set Tracker
+    Tracker: (name, checked_days, shared)
+    name: Subject -> one String
+    checked_days: set boolean
+    shared: set User
+```
 
-###
+### Collection-ing[Content]
+```ts
+    user_collections: User -> set collection
+    collections: user_collections -> one User
+    default_collections: set Content
+    default_subject: default_collections -> set collection
+    collection: default_subject -> set collection
+    name: collection -> one String
+    deadline: collection -> one Date
+    collectionContent: collection -> set Content
+    collectionContentName: collectionContent -> one String
+    shared: collection -> set Users
+```
 
-However, one week in (i.e., by 11:59pm on Thurs Oct 3), we would like you to make a milestone submission to signal you are making adequate progress. This milestone will only be graded for completion (i.e., only to determine that you have submitted the required materials). Your milestone materials should include the following:
+### Leveling[ExperienceSources]
+```ts
+    const s: ExperienceSources -> set int
 
-Complete abstract data models for all concepts in your design posted to your portfolio.
-A full, working implementation for two concepts in your design beyond the four we provide you with.
-An initial deployment of your web service to Vercel. It is fine if you do not get things to work completely or correctly by the milestone deadline, but we would like to see you make a good faith attempt at deployment. In past years, deployment has proven trickier than students anticipated, so we’re eager to surface any problems early on so we can help you.
-An initial outline of the design of your RESTful routes for your remaining concepts. This outline need only comprise function declarations in server/routes.ts and associated documentation/comments—you may leave the function bodies (i.e., the controllers/concept synchronizations) empty.
-To help make all parts of this assignment accessible, your portfolio should also provide prominent links to your backend code repository and deployed service.
+    users_exp: set User
+    user: users_exp -> one int
+
+    users_lvl: set User
+    user: users_lvl -> one int
+```
+
+### Summarizing[Categories]
+```ts
+    const counts: set Categories
+    category: Categories -> one int 
+```
+
+## ✅ App Definition
+```ts
+app Achievemint
+    include Authenticating
+    include Posting[Author]
+    include Following[User]
+    include Trackering
+    include Collectioning[String]
+    include Leveling[Trackers, Collections]
+    include Summarizing[DefaultCollections]
+```
+![](/diagram.jpg)
+
+## Design Reflection
