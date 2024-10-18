@@ -4,7 +4,7 @@ layout: doc
 ---
 # Frontend Design & Implementation
 
-[Deployment](https://achievemint-app.vercel.app/)
+[Deployment](https://achieve-mint.vercel.app/)
 <br>
 [Repository](https://github.com/jocelynz4890/achievemint)
 
