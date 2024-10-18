@@ -6,7 +6,7 @@ layout: doc
 
 [Deployment](https://achievemint-app.vercel.app/)
 <br>
-[Repository](https://github.com/jocelynz4890/achievemint)
+[Repository](https://github.com/jocelynz4890/achievemint-backend)
 
 ## ✅ Abstract Data Models
 
